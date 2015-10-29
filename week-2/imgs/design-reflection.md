@@ -1,4 +1,4 @@
-#SITEMAP AHOY! ![Here we have a wireframe of a darned simple site](/Users/masopie/phase-0-curriculum/phase-0/week-2/imgs/site-map.jpg "Wireframe!")
+#SITEMAP AHOY! ![Here we have a wireframe of a darned simple site](phase-0/master/week-2/imgs/site-map.jpg "Wireframe!")
 
 
 1. What are the 6 Phases of Web Design?
