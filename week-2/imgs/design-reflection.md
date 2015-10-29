@@ -1,4 +1,4 @@
-#SITEMAP AHOY! ![Here we have a wireframe of a darned simple site](site-map.jpg "Wireframe!")
+#SITEMAP AHOY! ![Here we have a wireframe of a darned simple site](site-map.jpg "Tah dah: wireframe.")
 
 
 1. What are the 6 Phases of Web Design?
