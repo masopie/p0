@@ -1,0 +1,25 @@
+* {
+    color:#000080;
+}
+
+a {
+    color:#800080;
+}
+
+a:visited {
+    color:#FF0000;
+}
+
+html {
+    background-color:#FFF;
+}
+
+.column-left, .column-right {
+    float: left;
+    width: 25em;
+    margin: 10px;
+}
+
+.foot {
+    clear: both;
+}
