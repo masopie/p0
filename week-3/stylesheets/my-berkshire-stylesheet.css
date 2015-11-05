@@ -2,8 +2,35 @@
     color:#000080;
 }
 
+h2 {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+h2 p {
+    font-size: .6em;
+}
+
+hr {
+  border: 1;
+  width: 98%;
+}
+
+.lilbig {
+    font-size: .8em;
+}
+
+.top {
+    font-size: 1.6em;
+}
+
+li {
+    font-size: .5em;
+}
+
 a {
     color:#800080;
+    font-size: 1.8em;
 }
 
 a:visited {
@@ -14,12 +41,33 @@ html {
     background-color:#FFF;
 }
 
-.column-left, .column-right {
+.hline {
+  width:100%; height:1px; background: #fff
+}
+
+}
+.column-left, {
     float: left;
-    width: 25em;
-    margin: 10px;
+    width: 45%;
+    display: inline;
+}
+
+.column-right {
+    float: right;
+    width: 45%;
+    display: inline;
 }
 
 .foot {
     clear: both;
+    text-align: center;
+    font-size: .5em;
+}
+
+.foot a {
+    font-size: .5em;
+}
+
+.legal {
+    text-align: left;
 }
