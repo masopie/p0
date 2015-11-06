@@ -1,3 +1,21 @@
+/*
+
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+  I suppose the first important thing is the power of what you're doing: you are basically getting an extra, gigantic muscle for styling your html. Plus, you don't further convolute it, other than assigning a few selectors to elements!;
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+  Positioning was tough to get down (and my pair made the breakthrough with a damnable column issue we couldn't get past, honestly) and I can tell that positioning is going to plague me a bit moving forward. I think it helped doing the next pair before coming back to this one, as Google DevTools lets you look at the "box model" of each element you're playing with so you can expand your understanding of the cause/effect happening with your code minutiae.
+
+What CSS did you use to modify the element style (like size, color, etc.)
+  A lot! Just to list some out: color, background-color, border, width, font-size, text-align, margin, float, display.;
+
+Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+  Yes we did, we included both. We went with IDs for the really specific one-off ("onesie?" "one-off?") element styling. Classes came in handy for the rest of the selectors that could be used over and over!
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+  Theirs is cleaner. I mean, maybe not cleaner, but it just feels... tighter. I see that they're using elements in a way I didn't consider. For example: the large top BERKSHIRE HATHAWAY header is a great: they just made a new row for each differently-styled element - "B", "ERKSHIRE", "H", "ATHAWAY", "INC", and address. They don't have *less* code, but theirs is simply more immediately decipherable to the reader.
+
+*/
 * {
     color:#000080;
 }
