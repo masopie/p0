@@ -2,13 +2,8 @@
     color:#000080;
 }
 
-h2 {
-    font-size: 1.2em;
-    text-align: center;
-}
-
-h2 p {
-    font-size: .6em;
+html {
+    background-color:#FFF;
 }
 
 hr {
@@ -16,8 +11,17 @@ hr {
   width: 98%;
 }
 
-.lilbig {
+h2 p {
     font-size: .8em;
+}
+
+#site-name {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.lilbig {
+    font-size: 1.2em;
 }
 
 .top {
@@ -28,7 +32,7 @@ li {
     font-size: .5em;
 }
 
-a {
+li a {
     color:#800080;
     font-size: 1.8em;
 }
@@ -37,25 +41,16 @@ a:visited {
     color:#FF0000;
 }
 
-html {
-    background-color:#FFF;
-}
-
-.hline {
-  width:100%; height:1px; background: #fff
-}
-
-}
-.column-left, {
-    float: left;
-    width: 45%;
-    display: inline;
+.column-left {
+  width: 40%;
+  margin: 7px;
+  float: left;
 }
 
 .column-right {
-    float: right;
-    width: 45%;
-    display: inline;
+  width: 40%;
+  margin: 7px;
+  float: right;
 }
 
 .foot {
@@ -64,10 +59,16 @@ html {
     font-size: .5em;
 }
 
-.foot a {
-    font-size: .5em;
-}
-
 .legal {
     text-align: left;
+}
+
+.h-line {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
 }
