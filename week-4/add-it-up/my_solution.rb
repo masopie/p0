@@ -15,7 +15,12 @@
 
 
 # 1. total initial solution
+def total(input)
+  values = input.split
+  values.each {|i| puts i * 2}
+end
 
+input = [1, 2, 3]
 
 
 # 3. total refactored solution
