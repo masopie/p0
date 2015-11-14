@@ -38,9 +38,8 @@
 
 #Zero kept coming back as the only result. It became clear that all that was defined was a sum that was zero and all
 #that was comming back was the number zero. Just adding array integers to each other wouldn't do anything.
-#We had to return a modified sum, and the way to do that was to add the array to line 45 above.
-#Setting the sum to zero was in my pervious notes. I am not entirely sure why it works out that way. I'll have to read
-#up on it again
+#We had to return a modified sum, and the way to do that was to add the array to the line above.
+#Setting the sum to zero was in Joe's pervious notes. We'll continue working on figuring out how it relates to the rest of the method.
 
  def total(array)
      sum = 0
@@ -50,12 +49,12 @@
      return sum
  end
 
-dog = [1, 2, 3]
+#dog = [1, 2, 3]
 
-total(dog)
+#total(dog)
 
 # 4. sentence_maker pseudocode
-# make sure all pseudocode is commented out!
+
 # Input: An array of strings to be left as strings.
 # Output: A full "sentence" (string), made by adding the array elements.
 # Steps to solve the problem.
@@ -80,4 +79,9 @@ def sentence_maker(array)
 end
 
 # 6. sentence_maker refactored solution
+# So the solution above (it DOES WORK!! ;) ) was one I worked out after pouring and re-pouring over both the Chris Pine reading material and how my pair and I arrived at our answer to the first half. Plus a little googling. We emailed back and forth and, I must admit, is solution was MUCH more elegant:
 
+def sentence_maker(array)
+  array[0].capitalize!
+  return array.join(" ")+"."
+end
