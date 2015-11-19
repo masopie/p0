@@ -45,6 +45,8 @@ end
 
 def pad(array, min_size, value = nil) #non-destructive
   new_array = array.dup
+  #Each object has an objectid. It turns out that, unless you duplicate/clone/copy, you're setting/pointing the variable's ID to the exact same object.
+  #tl;dr: VARIABLES DON'T ACTUALLY CONTAIN ANYTHING, REMEMBER?? Just point to stuff.
   a_size = array.size
 #  if min_size <= a_size
 #    return array
