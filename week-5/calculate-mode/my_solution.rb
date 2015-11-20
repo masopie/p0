@@ -34,12 +34,20 @@ def mode(array)
   a_uniq.each do |x|
     freq[x]
   end
-  array.each { |x| freq[x] += 1 }
-  freq = freq.sort_by { |a, b| b } #.reverse! #.to_h ##sort_by returns an array, NOT A HASH
+  array.each do |x|
+    freq[x] += 1
+  end
+  freq = freq.sort_by do |a, b|
+    b.reverse!
+  end #.to_h ##sort_by returns the data it was originally passed, not a hash/array by default
 
   # => The next chunk is what lets you return more than one element if their frequencies/occurrences are both the highest
-  freq.group_by {|a, b| b}.max.last.map {|row| row[0]}.reverse!
+  freq.group_by {|a, b| b}
+    freq.max.last.map {|row| row[0]} #.reverse!
 
+  ##### test each piece w/ nums / strings array
+  ##### concise + readiable != SAME!
+  ##### TRY ABOVE LINE BY PRINTING AFTER EACH STEP
 
   # => Found on stack overflow http://stackoverflow.com/questions/9194233/get-maximum-as-an-array-in-case-of-more-than-one-with-same-maximum-value
   # => Uses .group_by - http://chrisholtz.com/blog/more-than-you-care-to-know-about-the-uniq-method/
