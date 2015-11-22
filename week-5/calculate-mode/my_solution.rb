@@ -29,21 +29,22 @@
 
 # 1. Initial Solution
 def mode(array)
-  freq = Hash.new(0)
   a_uniq = array.uniq
+  freq = Hash.new(0)
+
   a_uniq.each do |x|
     freq[x]
   end
+
   array.each do |x|
     freq[x] += 1
   end
   freq = freq.sort_by do |a, b|
-    b.reverse!
+    b
   end #.to_h ##sort_by returns the data it was originally passed, not a hash/array by default
 
   # => The next chunk is what lets you return more than one element if their frequencies/occurrences are both the highest
-  freq.group_by {|a, b| b}
-    freq.max.last.map {|row| row[0]} #.reverse!
+  freq.group_by {|a, b| b}.max.last.map {|row| row[0]} #.reverse!
 
   ##### test each piece w/ nums / strings array
   ##### concise + readiable != SAME!
