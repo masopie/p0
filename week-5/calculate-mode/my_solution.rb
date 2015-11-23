@@ -28,23 +28,28 @@
 
 
 # 1. Initial Solution
+
 def mode(array)
   a_uniq = array.uniq
   freq = Hash.new(0)
 
-  a_uniq.each do |x|
-    freq[x]
-  end
+  a_uniq.each { |item| freq[item] }
+# p freq
 
-  array.each do |x|
-    freq[x] += 1
+  array.each { |item| freq[item] += 1 }
+# p freq
+  freq = freq.group_by {|a,b| b}.max.last
+# p freq
+
+  if freq.size > 1
+    freq = freq.map {|x| x[0]}
+  else
+    return [freq[0][0]] #just a reminder - these bits refer to the 1st ("0th") element of the 1st ("0th") array!
   end
-  freq = freq.sort_by do |a, b|
-    b
-  end #.to_h ##sort_by returns the data it was originally passed, not a hash/array by default
+end
 
   # => The next chunk is what lets you return more than one element if their frequencies/occurrences are both the highest
-  freq.group_by {|a, b| b}.max.last.map {|row| row[0]} #.reverse!
+  #freq.group_by {|a, b| b}.max.last.map {|row| row[0]} #.reverse!
 
   ##### test each piece w/ nums / strings array
   ##### concise + readiable != SAME!
@@ -53,24 +58,27 @@ def mode(array)
   # => Found on stack overflow http://stackoverflow.com/questions/9194233/get-maximum-as-an-array-in-case-of-more-than-one-with-same-maximum-value
   # => Uses .group_by - http://chrisholtz.com/blog/more-than-you-care-to-know-about-the-uniq-method/
 
-=begin
-  if freq.size > 1
-    freq.each { |x| return freq[0][0] }
-  else
-    return freq[0][0]
-  end
-
-  #freq.flatten!
-  #freq.first(n=1)
-=end
-
-end
-
 p mode([4, 4, 5, 5, 6, 6, 6, 7, 5])
 
 # 3. Refactored Solution
 
-
+#Going to skip the refactoring here. Pair and I sank untold hours into this, no time, no time!!
 
 
 # 4. Reflection
+
+=begin
+
+- Which data structure did you and your pair decide to implement and why?
+I guess our data structure was an array? Mainly because we could iterate over it!
+
+- Were you more successful breaking this problem down into implementable pseudocode than the last with a pair?
+Er... Yes. I think we were more successful, in a sense. We kept it VERY VERY simple this time around, comparative to how complex we had to let the code get.
+In my mind, at this point, the simpler the pseudocode, the better. So long as you aren't thinking in weird ways about what you need to do.
+
+- What issues/successes did you run into when translating your pseudocode to code?
+We called an extra .reverse and .sort_by that just, like, absolutely killed us. Created this weird permanently incorrect ordering with the returned array, regardless of object class type.
+
+- What methods did you use to iterate through the content? Did you find any good ones when you were refactoring? Were they difficult to implement?
+#each was the big guy. However, the new methods we picked up from hair-pulling Google searches were: uniq, group_by, max, map, and last. I'm still a bit confused about the purpose of map, but the rest made sense once we popped them in and saw the results.
+=end
