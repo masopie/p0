@@ -35,7 +35,7 @@ end
 
 die = Die.new(6)
 p die
-=end
+#=end
 
 # 3. Refactored Solution
 
