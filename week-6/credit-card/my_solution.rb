@@ -79,7 +79,17 @@ class CreditCard
 end
 
 
-
-
-
 # Reflection
+
+=begin
+
+What was the most difficult part of this challenge for you and your pair?
+# => Oh holy mother of god, just keeping everything straight. This was the first pair challenge where I felt like we really had a ton of different lexical bits that formed a giant coupla constructs. HOWEVER: oddly enough, using the Ternary expression (*if this thing is true* ? *then do this thing* : *else do this*) actually made it feel EASIER for both of us to comprehend all the activity.
+
+What new methods did you find to help you when you refactored?
+# => So we refactored backwards: we began with the super-condensed Ternary form (do_blahblah ? if_blahblah_is_true : else_doblahblah) and broke it down for readability. The only refactoring we could have added would probably be to find synonymous methods to what we used (eg converting classes using different terms, etc).
+
+What concepts or learnings were you able to solidify in this challenge?
+# => The ternary expression, definitely. The #inject method still feels like a counterintuitive name, but no matter. I am glad for my pair's instincts, he guided us well through consolidating almost everything into/under the check_card method, outside setting the initial CC number.
+
+=end
