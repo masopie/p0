@@ -96,3 +96,21 @@ b = startup_names.collect do |n|
 end
 
 p b
+
+# Reflections
+
+=begin
+
+What are some general rules you can apply to nested arrays?
+# => On basic comprehension of what's going on:
+# => I think working from the inside-out is a good basic starter, especially if you're running into problems. It seems like a lot of nesting is going to be iterating and that can get tricky if you look at it from the highest (outermost) level alone. Going down to your "innermost" nested array means you'll find the first thing that gets an "end result" and returns something before going back and starting through the layers of nested stuff again!
+
+What are some ways you can iterate over nested arrays?
+# => Oh, so many! Just setting basic conditional situations (eg with if..else) is a great start. Where you say "Okay! If the array's initial element (ie, nested array numero uno IN the main array) meets X criteria, go ahead and return the element in that larger "element" (nested array). If not, go to the next "larger element" (ie, nested array #2) and check it!"
+
+Did you find any good new methods to implement or did you re-use one you were already familiar with? What was it and why did you decide that was a good option?
+# => #kind_of was a neat and equally intuitive synonym for #is_a, which I had been using. Both are booleans to check if an object is a certain class.
+# => My pair instinctively thought to use #inject where I thought to use, with some refreshers and his help, #concat. Both were pretty darn simple.
+# => OH, oh. And he had glanced at #Ternary methods, which we successfully implemented. WOW was that ever a BIG change in refactoring here!
+
+=end
