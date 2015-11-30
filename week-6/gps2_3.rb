@@ -43,7 +43,7 @@ def serving_size_calc(item_to_make, num_of_ingredients)
   end
 end
 
-
+=begin
 
 # REFACTOR
 def serving_size_calc(item_to_make, num_of_ingredients)
@@ -63,7 +63,7 @@ def serving_size_calc(item_to_make, num_of_ingredients)
   # else
   #   return "Calculations complete: Make #{num_of_ingredients / ingredients_required} of #{item_to_make}, you have #{remaining_ingredients} leftover ingredients. Suggested baking items: TODO: MAKE THIS FEATURE"
   # end
-end
+=end
 
 p serving_size_calc("pie", 7)
 p serving_size_calc("pie", 21)
@@ -76,13 +76,14 @@ p serving_size_calc("cookie", 50)
 #  Reflection
 
 # What did you learn about making code readable by working on this challenge?
-# =>
+# => This actually taught us: keep it simple. I have to repeat that, Chris Pine style: keep    it    simple. The very firs thing my pair said was, "GOD is this code ugly," referring to the error_counter portions. Well, if it's awkward, nix it!
 
 # Did you learn any new methods? What did you learn about them?
-# =>
+# => Case statements, actually! Like a cleaner if..else statement.
 
 # What did you learn about accessing data in hashes?
-# =>
+# => Well... So if you pull out an element, first of all, it's going to be an array (the key/value pair, together, bracketed) and not just the key's value. It can get murky fast. And I thought, for sure, that "pssh I got this." Shyeah right.
+# => This program itself does this little thing I just mentioned in that ugly chunk below error_counter-related library iteration chunk. I hadn't intuited that at all before. It takes the value of each established library item (technically a value of ***nil***, since, for example, ["cookie", 1], the array of the first element if it's extracted) and compares it to the inputted value (what's that? you want them to make 10 "pizza"? well pizza != nil, so forget that!)
 
 # What concepts were solidified when working through this challenge?
-# =>
+# => The strongest solidifcation was with the above hash behavior. And refactoring in general. As our guide summarized once we got on the right path, (paraphrased) refactoring is something that should fit the purpose/situation/personality of the code, its readers, and eventual users. It can even be done bit-by-bit as you start writing it! So don't get overwhelmed by it.
