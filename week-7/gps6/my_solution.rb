@@ -148,3 +148,20 @@ STATE_DATA.each { |state, value| VirusPredictor.new(state, value[:population_den
 
 #=======================================================================
 # Reflection Section
+
+# What are the differences between the two different hash syntaxes shown in the state_data file?
+# => The larger "hashy hash" with the rockets (=>) uses 'strings' as its keys. The inner hashes use :symbols. If you're going to be using a billion methods in that same class, it's better to use the latter, symbols.
+# => ...You see, each instance of a string - even if it looks the same as the last - is a new object. And anything new or changed = more memory consumed. Things can hog memory fast. Symbols, however, can represent individual, frequently recurring words or variables, if your content is huge but the vocab is limited!
+# => ^ http://www.randomhacks.net/2007/01/20/13-ways-of-looking-at-a-ruby-symbol/#12
+
+# What does require_relative do? How is it different from require?
+# => Require_relative just hunts down a similarly-/that-named file in the same folder. Require mandates the reference file be at a specific location and that you list that specific path.
+
+# What are some ways to iterate through a hash?
+# => Each! You just have to remember: you're going to have TWO placeholders. And if one of those placeholders contains a nested hash? Well, that's going to have to have nested iteration with two uses of hashname[]!
+
+# When refactoring virus_effects, what stood out to you about the variables, if anything?
+# => "Passing" the variables to predicted_deaths & speed_of_spread wasn't actually passing them anything at all. Those are the mighty INSTANCE VARIABLES that they're using in the private methods below! We don't have to use them at all in virus_effects!!!!
+
+# What concept did you most solidify in this challenge?
+# => Instance variables: where they can be used, how powerful & salient they are, etc. Oh, and PRIVATE!
