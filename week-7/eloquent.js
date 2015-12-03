@@ -5,7 +5,14 @@
 // Program Structure
 // Write your own variable and do something to it.
 
-
+var total = 0, count = 1;
+while (count <= 10) {
+  total += count;
+  count += 1;
+  console.log("total is " + total, "count is " + count)
+}
+console.log(total);
+// → 55
 
 
 // Complete one of the exercises: Looping a Triangle, FizzBuzz, or Chess Board
