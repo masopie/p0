@@ -27,13 +27,11 @@ var separateComma = function(number) {
   //number = number.slice(2);
 
   for (var counter = 3; counter < number.length; counter = counter + 4)
-  number.splice(counter, 3, ",")
-
+  number.splice(counter, 0, ","); // Changed (counter, 3, ',') to (counter, 0, ',')
+  number = number.reverse();
+  number = number.join(""); // join() separates elements with commas by default. Hence the empty string as a parameter.
   console.log(number)
-
-//str.split([separator[, limit]])
 }
-separateComma(109285)
 
 
 // Refactored Solution
@@ -43,7 +41,8 @@ separateComma(109285)
 
 // Your Own Tests (OPTIONAL)
 
-
+separateComma(8000000)
+separateComma(302359820123948725830239)
 
 
 // Reflection
