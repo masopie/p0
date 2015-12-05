@@ -42,7 +42,7 @@ var separateComma = function(number) {
 // Your Own Tests (OPTIONAL)
 
 separateComma(8000000)
-separateComma(302359820123948725830239)
+separateComma(30235982012394)
 
 
 // Reflection
