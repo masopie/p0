@@ -5,6 +5,7 @@
 // Program Structure
 // Write your own variable and do something to it.
 
+/*
 var total = 0, count = 1;
 while (count <= 10) {
   total += count;
@@ -13,13 +14,31 @@ while (count <= 10) {
 }
 console.log(total);
 // → 55
-
+*/
 
 // Complete one of the exercises: Looping a Triangle, FizzBuzz, or Chess Board
+//Triangle:
+// counter = ""
 
+// for (var i = 0; i < 7; i++) {
+//   counter = counter + "\#";
+//   console.log(counter);
+// };
 
+//FizzyBottoms
 
-// Functions
+counter = 0
+
+for (var i = 0; i <= 100; i++) {
+  if (counter % 5 === 0 && counter % 3 === 0) {
+    console.log("Fizz");
+  } else if (counter % 3 === 0) {
+    console.log("Butts");
+  } else if (counter % 5 === 0 && counter % 3 !== 0) {
+    console.log("FizzyBottoms");
+  } else console.log(counter);
+  counter++;
+};
 
 // Complete the `minimum` exercise.
 
