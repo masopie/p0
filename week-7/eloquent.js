@@ -5,19 +5,19 @@
 // Program Structure
 // Write your own variable and do something to it.
 
-/*
-var total = 0, count = 1;
-while (count <= 10) {
-  total += count;
-  count += 1;
-  console.log("total is " + total, "count is " + count)
-}
-console.log(total);
-// → 55
-*/
+var myAnxiety = 9000;
+myAnxiety += 1;
+console.log(myAnxiety);
+
+// Favorite food input
+
+prompt("Please enter your favorite food.");
+window.alert("Hey! That's my favorite food too!");
 
 // Complete one of the exercises: Looping a Triangle, FizzBuzz, or Chess Board
-//Triangle:
+
+// Triangle:
+
 // counter = ""
 
 // for (var i = 0; i < 7; i++) {
@@ -25,7 +25,7 @@ console.log(total);
 //   console.log(counter);
 // };
 
-//FizzyBottoms
+// FizzyBottoms
 
 counter = 0
 

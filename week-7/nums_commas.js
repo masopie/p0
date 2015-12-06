@@ -35,7 +35,9 @@ var separateComma = function(number) {
 
 
 // Refactored Solution
+function separateComma(number) {
 
+}
 
 
 
