@@ -5,9 +5,9 @@
 // Program Structure
 // Write your own variable and do something to it.
 
-var myAnxiety = 9000;
-myAnxiety += 1;
-console.log(myAnxiety);
+// var myAnxiety = 9000;
+// myAnxiety += 1;
+// console.log(myAnxiety);
 
 // Favorite food input
 
@@ -18,12 +18,12 @@ window.alert("Hey! That's my favorite food too!");
 
 // Triangle:
 
-// counter = ""
+counter = ""
 
-// for (var i = 0; i < 7; i++) {
-//   counter = counter + "\#";
-//   console.log(counter);
-// };
+for (var i = 0; i < 7; i++) {
+  counter = counter + "\#";
+  console.log(counter);
+};
 
 // FizzyBottoms
 
@@ -41,8 +41,31 @@ for (var i = 0; i <= 100; i++) {
 };
 
 // Complete the `minimum` exercise.
+function min(x, y) {
+  if (x < y) {
+      return x;
+    } else {
+    return y;
+    }
+}
 
+console.log(min(0, 10));
+// → 0
+console.log(min(0, -10));
+// → -10
 
 
 // Data Structures: Objects and Arrays
 // Create an object called "me" that stores your name, age, 3 favorite foods, and a quirk below.
+
+var me = {
+  "name": "Mason",
+  "age": 31,
+  "favoriteFoods": ["playdough", "crayons", "bicycles"],
+  "quirk": "I have walked through the Mississippi River from one side to the other."
+}
+
+console.log(me.name)
+console.log(me.age)
+console.log(me.favoriteFoods)
+console.log(me.quirk)
