@@ -240,12 +240,15 @@ caterpillar.move("Doritos")
 
 
 // What was the most difficult part of this challenge?
-
+//  Figuring out where stuff went. Which is to say, what should go where to not break our JS environment and keep the code going. I know that sounds overly simple but, when you only have a week with it, it's hard to even remember basic - and probably sort of erroneous - signposts like "OK, so a JS function basically = a Ruby method... and a JS Object can cotain either an array or Ruby Hash-esque name/value (aka property/value) pairs... and don't forget to put your functions INSIDE your objects, like we were trying with newly built Methods inside newly built Classes in Ruby recently..."
+//  ...Whew, it just became a lot.
 
 // What did you learn about creating objects and functions that interact with one another?
-
+//  I hate to say I am still unsure after such a big assignment, but I THINK I'm kinda getting comfortable with this in JS now. Basically, the "insides" (typically functions, other objects, and various statements (eg if..else)) of one object can't necessarily reference the "insides" of another. To help with this - like, in a visual learner style - I kept my two basic objects separate: bird and caterpillar are their own big ol' monolithic objects. That way, i could at least reference bird itself inside caterpillar. Other, "smaller" objects, such as dropOfWater - an item you collect - can just go inside the player object (caterpillar) as a property/value pair.
 
 // Did you learn about any new built-in methods you could use in your refactored solution? If so, what were they and how do they work?
+//  I didn't cover every appearance very well, but I remembered from my pair challenge that using an object's property doesn't have to be the clunky object["name"], and can instead be this.name (for the object you're inside now) and/or object.name. Same goes for remembering my & my pair's use of switch..case statement: SO clean. I honestly don't know how I'd have done this game if we hadn't hammered that simple statement into our brains.
 
 
 // How can you access and manipulate properties of objects?
+//  Well, uh. Hm. Syntactically, you can just say object["property"] = value; and you SHOULD be able to (re-)assign the property/value pair therein? You can also increment with it (or do whatever math stuff) like I did with the axes & water.
