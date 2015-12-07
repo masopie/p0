@@ -25,7 +25,7 @@ function addWin(athleteObj, winBool) {
   };
   win();
 };
-// addWin(athlete, false)
+/addWin(athlete, false)
 
 
 // function win(athObj) {
@@ -38,9 +38,10 @@ function addWin(athleteObj, winBool) {
 
 // console.log(athletes["Usain Bolt"]["event"]);
 
-// ...So our "event:" is treated as a STRIMBLE??
+// ...So our "event:" is treated as a STRIMBOL??
 
-http://skillcrush.com/2015/02/02/37-rails-sites/
+//  http://skillcrush.com/2015/02/02/37-rails-sites/
+
 // Jumble your words
 var jumble = function(string) {
   string = string.split("");
