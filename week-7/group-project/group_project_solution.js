@@ -79,3 +79,12 @@ As a user, I would like to be able to figure out what my average is. As per the 
 
 As a user, I would like to know what my middling fee is. Not the average, because that takes into account the highs and the lows of the seasons and what have you, but actual dead center, smack in the middle bullseye fee that I charge for my talents. That way, people will know that I play it straight. I don't give them the run around. I got numbers, see? Hard numbers that don't lie. I take them and show them that I got a 'mean' fee. But that don't mean that's what they getting charged, only if they brought in as much as my grand total. So as to be equitible, I would like the amount that's right in the middle so they know they're gettin a fair shake from Bobby the BullFrog. I woulda said chorus frog, but I don't sing to no one for nothin.
 */
+
+
+/*
+Results:
+
+Looks like we nailed it for the first couple of "Sum" tests! Admittedly, I had to swap the terms "total" and "sum" to get it to work with the tests.
+
+Unfortunately, we error out at the 3rd test, "sum should return the sum of all elements in an array with an odd length."
+*/
