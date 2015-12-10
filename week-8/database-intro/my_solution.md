@@ -10,7 +10,10 @@
 9. select region_name from regions where region_name like '%Central';
 10. select regions.region_name, states.state_name from regions, states where regions.id=states.region_id;
 
-##REFLECTIONS!!!
+###CLUELESS SCHEMA DESIGNER!!!
+https://github.com/masopie/phase-0/blob/master/week-8/database-intro/Clueless%20Schemadesigner.jpg
+
+####REFLECTIONS!!
 ######What are databases for?
 * Databases exist to store large amounts of information and then access them pretty easily! They're a collection of:
 1. 'entities' (**tables** ~ each associated to each item you want to manage)
