@@ -1,5 +1,8 @@
 #ONE-TO-ONE SCHEMA!
 ![alt text](https://github.com/masopie/phase-0/blob/master/week-8/imgs/one-to-one_schema.jpg "One-to-One")
+
+
+#MANY-TO-MANY SCHEMA!
 ![alt text](https://github.com/masopie/phase-0/blob/master/week-8/imgs/many-to-many_schema.jpg "Many-to-Many")
 
 
