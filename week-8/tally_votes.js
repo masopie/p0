@@ -151,8 +151,42 @@ console.log(officers);
 // __________________________________________
 // Refactored Solution
 
+// To re-emphasize declared variables for comprehension purposes:
 
+// votes = {
+//  ballot: { vote }
+// }
 
+// &&
+
+// voteCount = {
+//   position: { votes }
+// }
+
+for (var voter in votes) {
+  var ballot = votes[voter];
+  for (var position in ballot) {
+    var vote = ballot[position];
+      if (voteCount[position].hasOwnProperty(vote)) {
+        voteCount[position][vote] += 1;
+      }
+      else {
+        voteCount[position][vote] = 1;
+      };
+  };
+};
+
+for (var vote in voteCount) {
+  var votesDefault = 0;
+  var position = voteCount[vote];
+  for (candidate in position) {
+    votes = position[candidate];
+    if (votes > votesDefault) {
+      votesDefault = votes;
+      officers[vote] = candidate;   //Still sort of confused why "position", the declared var for voteCount[vote], wouldn't work here
+    };
+  };
+};
 
 
 
